@@ -30,6 +30,7 @@ import AuthenticationService from '@/services/AuthenticationService'
     },
     methods:{
       async register(){
+        console.log(1)
         const  response = await AuthenticationService.register({
           email: this.email,
           password: this.password
